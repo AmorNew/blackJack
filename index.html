@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script type="text/javascript" src="script.js"></script>
+
+</head>
+<body>
+	
+	<div id="gameField"> 
+		
+		<div id='statusbar'>
+				New Game!
+		</div>
+
+		<div class="hand" id="dealer">
+			
+			<div class="info">
+				Dealer cards (Score: <span id="dealersScore"></span>)
+			</div>
+			<div class="cards" id="dealersCards">
+
+			</div>
+			
+		</div>
+		
+		<div class="hand" id="player">
+			
+			<div class="info" id="playersInfo">
+				Player cards (Score: <span id="playersScore"></span>, bet: <span id="playersBet"></span> cash: <span id="playersCash"></span>)
+			</div>
+			<div class="cards" id="playersCards">
+
+			</div>
+			
+		</div>
+		
+		<div id='toolbar'>
+			<div ></div>
+			<button id="start" onclick="startGame();">New Game</button>					
+			<button id="morecard" onclick="moreCard();" disabled>More Card</button>
+			<button id="next" onclick="dealerTurn();" disabled>Stay</button>
+			
+			
+		</div>
+		
+	</div>
+
+	<div id='totalScore'></div>
+	
+	
+</body>
+</html>
